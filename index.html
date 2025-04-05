@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ptoszek</title>
+    <style>
+    button {
+        align-items: center;
+        font-size: 20vw;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+        min-width: 95vw;
+        min-height: 95vh;
+    }
+    body {
+        margin: 0 auto;
+        margin-top: 2.5vh;
+        justify-content: center;
+        align-content: center;
+        display: flex;
+        background-color: rgb(31, 53, 71);
+    }
+
+    </style>
+</head>
+<body>
+
+<button onclick="kurwa()">👇</button>
+<audio id="playkurwa" src="kurwa.mp3" autoplay></audio>
+
+<script>
+  function kurwa() {
+    document.getElementById("playkurwa").play();
+  }
+</script>
+
+
+
+
+<!--
+<audio controls autoplay>
+<source src="kurwa.mp3">
+kurwa
+</audio> 
+-->
+</body>
+</html>
