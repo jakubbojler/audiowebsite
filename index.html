@@ -6,36 +6,49 @@
     <title>ptoszek</title>
     <style>
     button {
-        align-items: center;
-        font-size: 20vw;
+        font-size: 10vw;
         background-color: #4CAF50;
         color: white;
         border: none;
         border-radius: 40px;
         cursor: pointer;
-        min-width: 95vw;
-        min-height: 95vh;
+        width: 95vw;
+        min-height: 47.5vh;
     }
     body {
-        margin: 0 auto;
-        margin-top: 2.5vh;
-        justify-content: center;
+        margin: 2.5vw;
         align-content: center;
-        display: flex;
         background-color: rgb(31, 53, 71);
-    }
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-between;
+        position: relative;
 
+
+    }
     </style>
 </head>
 <body>
 
-<button onclick="kurwa()">👇</button>
-<audio id="playkurwa" src="kurwa.mp3" autoplay></audio>
+<button onclick="p1()">🗣️🔥</button>
+<audio id="p1" src="kurwa.mp3"></audio>
+
+<button onclick="p2()">cheetos</button>
+<audio id="p2" src="cheetos.mp3" autoplay></audio>
+
+<button onclick="p3()">:(</button>
+<audio id="p3" src="n.mp3"></audio>
 
 <script>
-  function kurwa() {
-    document.getElementById("playkurwa").play();
-  }
+  function p1(){
+  document.getElementById("p1").play();}
+
+  function p2(){
+  document.getElementById("p2").play();}
+
+  function p3(){
+    document.getElementById("p3").play();}
 </script>
 
 
