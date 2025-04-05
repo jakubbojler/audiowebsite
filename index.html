@@ -14,31 +14,25 @@
         cursor: pointer;
         width: 95vw;
         min-height: 47.5vh;
+        line-height: 1;
     }
     body {
         margin: 2.5vw;
         align-content: center;
         background-color: rgb(31, 53, 71);
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        justify-content: space-between;
-        position: relative;
-
-
     }
     </style>
 </head>
 <body>
 
-<button onclick="p1()">🗣️🔥</button>
-<audio id="p1" src="kurwa.mp3"></audio>
+<p><button onclick="p1()">🗣️🔥</button>
+<audio id="p1" src="kurwa.mp3"></audio></p>
 
 <button onclick="p2()">cheetos</button>
-<audio id="p2" src="cheetos.mp3" autoplay></audio>
+<p><audio id="p2" src="cheetos.mp3" autoplay></audio></p>
 
 <button onclick="p3()">:(</button>
-<audio id="p3" src="n.mp3"></audio>
+<p><audio id="p3" src="n.mp3"></audio></p>
 
 <script>
   function p1(){
@@ -48,7 +42,7 @@
   document.getElementById("p2").play();}
 
   function p3(){
-    document.getElementById("p3").play();}
+  document.getElementById("p3").play();}
 </script>
 
 
